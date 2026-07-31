@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estudio Juridico Dr. Vicente Del Federico & Asociados | Abogados en Belgrano, Buenos Aires</title>
+<meta name="description" content="Estudio juridico con mas de 25 anos de experiencia en Belgrano, CABA. Derecho Civil, Penal, Familia, Laboral y mas. Consultas presenciales y online. Atencion de 7 a 23 hs.">
+<meta name="keywords" content="abogado belgrano, estudio juridico buenos aires, abogado penalista, abogado civilista, derecho de familia, sucesiones, abogado CABA">
+<meta property="og:title" content="Estudio Juridico Dr. Vicente Del Federico & Asociados">
+<meta property="og:description" content="Mas de 25 anos resolviendo casos complejos. Abogados procesalistas y litigantes en Belgrano, Buenos Aires.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2696;&#xFE0F;</text></svg>">
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --navy: #0a1628;
+  --navy-light: #111d35;
+  --navy-mid: #162444;
+  --gold: #c9a84c;
+  --gold-light: #e0c76a;
+  --gold-dark: #a8872e;
+  --white: #f5f5f5;
+  --white-pure: #ffffff;
+  --gray-100: #e8e8e8;
+  --gray-200: #d0d0d0;
+  --gray-300: #a0a0a0;
+  --gray-600: #555;
+  --gray-800: #222;
+  --text: #e0e0e0;
+  --text-muted: #9aa5b8;
+  --bg: var(--navy);
+  --bg-card: var(--navy-light);
+  --bg-card-hover: var(--navy-mid);
+  --shadow: rgba(0,0,0,0.3);
+  --shadow-gold: rgba(201,168,76,0.15);
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-heading: 'Georgia', 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
+  --font-body: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --max-width: 1200px;
+  --section-padding: 100px 0;
+  --header-height: 72px;
+}
+
+/* ===== LIGHT MODE ===== */
+@media (prefers-color-scheme: light) {
+  :root {
+    --navy: #f7f7f7;
+    --navy-light: #ffffff;
+    --navy-mid: #f0f0f0;
+    --text: #1a1a2e;
+    --text-muted: #555;
+    --bg: #f7f7f7;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f0f0f0;
+    --shadow: rgba(0,0,0,0.08);
+    --shadow-gold: rgba(201,168,76,0.1);
+    --gold: #a8872e;
+    --gold-light: #c9a84c;
+    --gold-dark: #8a6e1e;
+    --white: #1a1a2e;
+    --gray-300: #666;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+ul { list-style: none; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== HEADER ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  transition: background var(--transition), box-shadow var(--transition), backdrop-filter var(--transition);
+}
+
+.header.scrolled {
+  background: rgba(10, 22, 40, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 2px 30px var(--shadow);
+}
+
+@media (prefers-color-scheme: light) {
+  .header.scrolled {
+    background: rgba(255,255,255,0.92);
+  }
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.logo span {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text);
+  position: relative;
+  transition: color var(--transition);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width var(--transition);
+}
+
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+
+/* ===== HAMBURGER ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+  background: none;
+  border: none;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: var(--gold);
+  transition: transform var(--transition), opacity var(--transition);
+  display: block;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ===== MOBILE MENU ===== */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 22, 40, 0.98);
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: light) {
+  .mobile-menu {
+    background: rgba(255,255,255,0.98);
+  }
+}
+
+.mobile-menu.open {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.mobile-menu a {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text);
+  transition: color var(--transition);
+}
+
+.mobile-menu a:hover { color: var(--gold); }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(160deg, #0a1628 0%, #0f2040 40%, #162444 70%, #0a1628 100%);
+}
+
+@media (prefers-color-scheme: light) {
+  .hero {
+    background: linear-gradient(160deg, #e8edf5 0%, #dce3f0 40%, #cfd8e8 70%, #e8edf5 100%);
+  }
+}
+
+.hero-bg-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image:
+    linear-gradient(30deg, var(--gold) 12%, transparent 12.5%, transparent 87%, var(--gold) 87.5%, var(--gold)),
+    linear-gradient(150deg, var(--gold) 12%, transparent 12.5%, transparent 87%, var(--gold) 87.5%, var(--gold)),
+    linear-gradient(30deg, var(--gold) 12%, transparent 12.5%, transparent 87%, var(--gold) 87.5%, var(--gold)),
+    linear-gradient(150deg, var(--gold) 12%, transparent 12.5%, transparent 87%, var(--gold) 87.5%, var(--gold));
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px;
+}
+
+.hero-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulseGlow 6s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
+  50% { transform: translate(-50%, -50%) scale(1.15); opacity: 1; }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 24px;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 8px 24px;
+  margin-bottom: 32px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards 0.3s;
+}
+
+.hero h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--white);
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards 0.6s;
+}
+
+@media (prefers-color-scheme: light) {
+  .hero h1 { color: #0a1628; }
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: var(--gold);
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards 0.9s;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards 1.2s;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-transform: uppercase;
+  font-family: var(--font-body);
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: #0a1628;
+}
+
+.btn-gold:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px var(--shadow-gold);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+}
+
+.btn-outline:hover {
+  background: var(--gold);
+  color: #0a1628;
+  transform: translateY(-2px);
+}
+
+.btn-sm {
+  padding: 10px 24px;
+  font-size: 0.8rem;
+}
+
+/* ===== SCROLL INDICATOR ===== */
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards 1.6s;
+}
+
+.scroll-indicator span {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.scroll-mouse {
+  width: 24px;
+  height: 38px;
+  border: 2px solid var(--gold);
+  border-radius: 12px;
+  position: relative;
+}
+
+.scroll-mouse::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 8px;
+  background: var(--gold);
+  border-radius: 2px;
+  animation: scrollDot 2s ease-in-out infinite;
+}
+
+@keyframes scrollDot {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 1; }
+  50% { transform: translateX(-50%) translateY(10px); opacity: 0.3; }
+}
+
+/* ===== SECTION COMMON ===== */
+.section {
+  padding: var(--section-padding);
+}
+
+.section-label {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+@media (prefers-color-scheme: light) {
+  .section-title { color: #0a1628; }
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.section-header {
+  margin-bottom: 60px;
+}
+
+.section-header.center {
+  text-align: center;
+}
+
+.section-header.center .section-subtitle {
+  margin: 0 auto;
+}
+
+.gold-line {
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  margin-top: 20px;
+}
+
+.section-header.center .gold-line {
+  margin: 20px auto 0;
+}
+
+/* ===== REVEAL ANIMATION ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+.reveal-delay-6 { transition-delay: 0.6s; }
+
+/* ===== SOBRE EL ESTUDIO ===== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.about-text p:first-of-type::first-letter {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  float: left;
+  line-height: 1;
+  margin-right: 8px;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  padding: 32px;
+  border: 1px solid rgba(201,168,76,0.1);
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(201,168,76,0.3);
+  box-shadow: 0 12px 40px var(--shadow);
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== AREAS DE PRACTICA ===== */
+.areas-section {
+  background: var(--bg-card);
+}
+
+@media (prefers-color-scheme: light) {
+  .areas-section { background: #f0f0f0; }
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.area-card {
+  background: var(--bg);
+  padding: 32px 24px;
+  border: 1px solid rgba(201,168,76,0.08);
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+@media (prefers-color-scheme: light) {
+  .area-card { background: #ffffff; }
+}
+
+.area-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width 0.4s ease;
+}
+
+.area-card:hover::after {
+  width: 100%;
+}
+
+.area-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(201,168,76,0.2);
+  box-shadow: 0 12px 40px var(--shadow);
+}
+
+.area-icon {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.area-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+@media (prefers-color-scheme: light) {
+  .area-card h3 { color: #0a1628; }
+}
+
+.area-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ===== POR QUE ELEGIRNOS ===== */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.why-card {
+  text-align: center;
+  padding: 40px 24px;
+  background: var(--bg-card);
+  border: 1px solid rgba(201,168,76,0.08);
+  transition: all var(--transition);
+}
+
+.why-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(201,168,76,0.2);
+  box-shadow: 0 12px 40px var(--shadow);
+}
+
+.why-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.6rem;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  transition: all var(--transition);
+}
+
+.why-card:hover .why-icon {
+  background: var(--gold);
+  transform: scale(1.1);
+}
+
+.why-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+@media (prefers-color-scheme: light) {
+  .why-card h3 { color: #0a1628; }
+}
+
+.why-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ===== TESTIMONIOS ===== */
+.testimonials-section {
+  background: var(--bg-card);
+}
+
+@media (prefers-color-scheme: light) {
+  .testimonials-section { background: #f0f0f0; }
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testimonial-card {
+  background: var(--bg);
+  padding: 40px 32px;
+  border: 1px solid rgba(201,168,76,0.08);
+  transition: all var(--transition);
+  position: relative;
+}
+
+@media (prefers-color-scheme: light) {
+  .testimonial-card { background: #ffffff; }
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(201,168,76,0.2);
+  box-shadow: 0 12px 40px var(--shadow);
+}
+
+.testimonial-quote {
+  font-size: 2.5rem;
+  color: var(--gold);
+  font-family: var(--font-heading);
+  line-height: 1;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.testimonial-card p {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.testimonial-author {
+  font-size: 0.85rem;
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.testimonial-type {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.testimonial-stars {
+  color: var(--gold);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+/* ===== CONTACTO ===== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border: 1px solid rgba(201,168,76,0.2);
+  background: var(--bg-card);
+  transition: all var(--transition);
+}
+
+.contact-item:hover .contact-icon {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.contact-item h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+@media (prefers-color-scheme: light) {
+  .contact-item h4 { color: #0a1628; }
+}
+
+.contact-item p, .contact-item a {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+
+.contact-item a:hover { color: var(--gold); }
+
+.contact-map {
+  width: 100%;
+  height: 240px;
+  border: 1px solid rgba(201,168,76,0.1);
+  filter: grayscale(0.4) contrast(1.1);
+  transition: filter var(--transition);
+}
+
+.contact-map:hover { filter: grayscale(0) contrast(1); }
+
+/* ===== FORMULARIO ===== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group { position: relative; }
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 0.9rem;
+  font-family: var(--font-body);
+  background: var(--bg-card);
+  color: var(--text);
+  border: 1px solid rgba(201,168,76,0.15);
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px var(--shadow-gold);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-group label {
+  position: absolute;
+  top: -8px;
+  left: 16px;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: var(--bg);
+  padding: 0 6px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #060e1c;
+  padding: 60px 0 0;
+  border-top: 1px solid rgba(201,168,76,0.1);
+}
+
+@media (prefers-color-scheme: light) {
+  .footer {
+    background: #e0e0e0;
+  }
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
+}
+
+.footer-brand {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.footer-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.footer h4 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--gold);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.footer-links a {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  padding: 6px 0;
+  transition: color var(--transition), padding-left var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+  padding-left: 8px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(201,168,76,0.1);
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-bottom p {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.footer-matricula {
+  font-size: 0.75rem;
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+/* ===== WHATSAPP FLOTANTE ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 998;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+  transition: transform var(--transition), box-shadow var(--transition);
+  animation: whatsappPulse 2.5s ease-in-out infinite;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(37,211,102,0.5);
+}
+
+@keyframes whatsappPulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.35); }
+  50% { box-shadow: 0 4px 30px rgba(37,211,102,0.55), 0 0 0 12px rgba(37,211,102,0.08); }
+}
+
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  :root { --section-padding: 72px 0; }
+
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+
+  .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .areas-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+
+  .hero h1 { font-size: 2rem; }
+  .hero-sub { font-size: 0.95rem; }
+
+  .about-stats { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .stat-card { padding: 24px; }
+  .stat-number { font-size: 2.2rem; }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-grid { grid-template-columns: 1fr; }
+  .about-stats { grid-template-columns: 1fr; }
+  .hero-buttons { flex-direction: column; align-items: center; }
+  .btn { width: 100%; justify-content: center; }
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* ===== MISC ===== */
+::selection {
+  background: var(--gold);
+  color: #0a1628;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--gold-dark); }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#inicio" class="logo">
+      Dr. Del Federico & Asoc.
+      <span>Estudio Juridico</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#estudio">El Estudio</a>
+      <a href="#areas">Areas</a>
+      <a href="#ventajas">Ventajas</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu de navegacion">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#estudio">El Estudio</a>
+  <a href="#areas">Areas de Practica</a>
+  <a href="#ventajas">Por Que Elegirnos</a>
+  <a href="#testimonios">Testimonios</a>
+  <a href="#contacto">Contacto</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Abogados Procesalistas & Litigantes</div>
+    <h1>Su causa merece<br>la <em>mejor defensa</em></h1>
+    <p class="hero-sub">Mas de 25 anos resolviendo casos complejos con responsabilidad, compromiso y resultados concretos. Derecho local, federal e internacional.</p>
+    <div class="hero-buttons">
+      <a href="https://wa.me/5491154228070?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20juridica" class="btn btn-gold" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Consulta por WhatsApp
+      </a>
+      <a href="#contacto" class="btn btn-outline">Contactenos</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- SOBRE EL ESTUDIO -->
+<section class="section" id="estudio">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="section-label">Sobre el Estudio</span>
+        <h2 class="section-title">Trayectoria, compromiso<br>y resultados</h2>
+        <div class="gold-line"></div>
+        <br>
+        <p>Con mas de 25 anos de ejercicio profesional, el Estudio Juridico Dr. Vicente Del Federico & Asociados es sinonimo de excelencia en litigacion y defensa de los derechos de sus clientes. Nuestro equipo se especializa en resolver casos complejos que requieren un abordaje estrategico, multidisciplinario y comprometido.</p>
+        <p>El Dr. Del Federico es un reconocido procesalista y litigante que ejerce la profesion con pasion y compromiso. Contamos con estudios asociados en el interior del pais y en el exterior, lo que nos permite ofrecer cobertura en derecho local, federal e internacional.</p>
+        <p>Brindamos atencion personalizada a traves de multiples canales: presencial, telefonica, email, chat y Skype, con un horario extendido de 7 a 23 horas para estar siempre disponibles cuando nuestros clientes nos necesitan.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-number" data-count="25">0</div>
+          <div class="stat-label">Anos de experiencia</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat-number" data-count="13">0</div>
+          <div class="stat-label">Areas de practica</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-3">
+          <div class="stat-number" data-count="3">0</div>
+          <div class="stat-label">Idiomas</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-4">
+          <div class="stat-number" data-count="16">0</div>
+          <div class="stat-label">Horas de atencion diaria</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS DE PRACTICA -->
+<section class="section areas-section" id="areas">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">Areas de Practica</span>
+      <h2 class="section-title">Especialistas en diversas ramas del derecho</h2>
+      <p class="section-subtitle">Abordamos cada caso con un enfoque estrategico y multidisciplinario para garantizar la mejor solucion juridica.</p>
+      <div class="gold-line"></div>
+    </div>
+    <div class="areas-grid">
+      <div class="area-card reveal reveal-delay-1">
+        <span class="area-icon">&#9878;</span>
+        <h3>Derecho Civil y Sucesiones</h3>
+        <p>Contratos, responsabilidad civil, sucesiones, herencias y todo tipo de conflictos patrimoniales.</p>
+      </div>
+      <div class="area-card reveal reveal-delay-2">
+        <span class="area-icon">&#128737;</span>
+        <h3>Derecho Penal</h3>
+        <p>Defensa penal integral, delitos complejos, excarcelaciones y representacion de victimas.</p>
+      </div>
+      <div class="area-card reveal reveal-delay-3">
+        <span class="area-icon">&#128106;</span>
+        <h3>Derecho de Familia</h3>
+        <p>Divorcios, cuota alimentaria, regimen de comunicacion, adopcion y proteccion integral.</p>
+      </div>
+      <div class="area-card reveal reveal-delay-1">
+        <span class="area-icon">&#128188;</span>
+        <h3>Derecho Laboral</h3>
+        <p>Despidos, accidentes de trabajo, reclamos salariales y defensa ante el empleador.</p>
+      </div>
+      <div class="area-card reveal reveal-delay-2">
+        <span class="area-icon">&#128200;</span>
+        <h3>Derecho Comercial</h3>
+        <p>Sociedades, contratos comerciales, concursos, quiebras y litigios empresariales.</p>
+      </div>
+      <div class="area-card reveal reveal-delay-3">
+        <span class="area-icon">&#128176;</span>
+        <h3>Derecho Tributario</h3>
+        <p>Planificacion fiscal, defensa ante AFIP, recursos administrativos y judiciales.</p>
+      </div>
+      <div class="area-card reveal reveal-delay-1">
+        <span class="area-icon">&#128221;</span>
+        <h3>Derecho Procesal</h3>
+        <p>Estrategia litigiosa, recursos extraordinarios, medidas cautelares y ejecucion de sentencias.</p>
+      </div>
+      <div class="area-card reveal reveal-delay-2">
+        <span class="area-icon">&#127795;</span>
+        <h3>Derecho Ambiental</h3>
+        <p>Proteccion del medio ambiente, danos ambientales y acciones colectivas.</p>
+      </div>
+      <div class="area-card reveal reveal-delay-3">
+        <span class="area-icon">&#9996;</span>
+        <h3>Derechos Humanos</h3>
+        <p>Defensa de garantias constitucionales, amparos y litigio ante organismos internacionales.</p>
+      </div>
+      <div class="area-card reveal reveal-delay-1">
+        <span class="area-icon">&#128722;</span>
+        <h3>Defensa del Consumidor</h3>
+        <p>Reclamos por productos y servicios defectuosos, publicidad enganosa y danos al consumidor.</p>
+      </div>
+      <div class="area-card reveal reveal-delay-2">
+        <span class="area-icon">&#128062;</span>
+        <h3>Derecho Animal</h3>
+        <p>Proteccion juridica de los animales, maltrato animal y tenencia responsable.</p>
+      </div>
+      <div class="area-card reveal reveal-delay-3">
+        <span class="area-icon">&#128187;</span>
+        <h3>Nuevas Tecnologias</h3>
+        <p>Delitos informaticos, proteccion de datos, comercio electronico y propiedad intelectual digital.</p>
+      </div>
+      <div class="area-card reveal reveal-delay-1">
+        <span class="area-icon">&#128156;</span>
+        <h3>Violencia de Genero</h3>
+        <p>Asistencia legal integral, medidas de proteccion y acompanamiento en situaciones de violencia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE ELEGIRNOS -->
+<section class="section" id="ventajas">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">Por que elegirnos</span>
+      <h2 class="section-title">Lo que nos distingue</h2>
+      <p class="section-subtitle">Combinamos experiencia, dedicacion y alcance para ofrecerle el mejor servicio juridico.</p>
+      <div class="gold-line"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon">&#128337;</div>
+        <h3>Horario Extendido</h3>
+        <p>Atencion de 7 a 23 horas, porque sabemos que los problemas legales no esperan horario de oficina.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon">&#127760;</div>
+        <h3>Alcance Internacional</h3>
+        <p>Derecho local, federal e internacional. Estudios asociados en el interior del pais y en el exterior.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-icon">&#127979;</div>
+        <h3>Tres Idiomas</h3>
+        <p>Atendemos en espanol, ingles e italiano para asistir a clientes de diversas nacionalidades.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-4">
+        <div class="why-icon">&#128179;</div>
+        <h3>Multiples Formas de Pago</h3>
+        <p>Efectivo, tarjetas de credito, Mercado Pago y financiacion propia para facilitar el acceso a la justicia.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon">&#128241;</div>
+        <h3>Atencion Multicanal</h3>
+        <p>Presencial, telefonica, email, chat y Skype. Nos adaptamos a usted, no al reves.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon">&#128170;</div>
+        <h3>+25 Anos de Experiencia</h3>
+        <p>Un cuarto de siglo resolviendo casos complejos con estrategia, pasion y resultados comprobables.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-icon">&#127919;</div>
+        <h3>Procesalistas y Litigantes</h3>
+        <p>Especialistas en la estrategia judicial. No solo conocemos el derecho: sabemos como litigarlo.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-4">
+        <div class="why-icon">&#128204;</div>
+        <h3>Presencia en CABA y GBA</h3>
+        <p>Oficina central en Belgrano con cobertura en todo el Gran Buenos Aires.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="section testimonials-section" id="testimonios">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">Testimonios</span>
+      <h2 class="section-title">La confianza de nuestros clientes</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-quote">&ldquo;</div>
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Excelente atencion desde el primer momento. Me explicaron todo con claridad y resolvieron mi caso de sucesion en tiempo record. Totalmente recomendables.</p>
+        <div class="testimonial-author">M. R.</div>
+        <div class="testimonial-type">Derecho Civil y Sucesiones</div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-quote">&ldquo;</div>
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Muy profesionales y siempre disponibles. Me atendieron fuera de horario cuando tuve una urgencia y me acompanaron en todo el proceso. Gracias por todo.</p>
+        <div class="testimonial-author">C. L.</div>
+        <div class="testimonial-type">Derecho Penal</div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-3">
+        <div class="testimonial-quote">&ldquo;</div>
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Tuve un problema laboral complejo y el Dr. Del Federico logro un resultado que supero mis expectativas. Serios, comprometidos y con una estrategia impecable.</p>
+        <div class="testimonial-author">J. A.</div>
+        <div class="testimonial-type">Derecho Laboral</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="section" id="contacto">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">Contacto</span>
+      <h2 class="section-title">Estamos para ayudarlo</h2>
+      <p class="section-subtitle">Escribanos o visitenos en nuestro estudio. La primera consulta es el primer paso hacia la solucion.</p>
+      <div class="gold-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info-list">
+          <div class="contact-item">
+            <div class="contact-icon">&#128205;</div>
+            <div>
+              <h4>Direccion</h4>
+              <p>Cabildo 2230, Belgrano<br>Buenos Aires (CABA)</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#128222;</div>
+            <div>
+              <h4>Telefonos</h4>
+              <p><a href="tel:+5491127970029">11 2797-0029</a></p>
+              <p><a href="https://wa.me/5491154228070" target="_blank" rel="noopener">11 5422-8070 (WhatsApp)</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#9993;</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:drdelfederico@gmail.com">drdelfederico@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#128337;</div>
+            <div>
+              <h4>Horario de Atencion</h4>
+              <p>Lunes a Viernes: 7:00 a 23:00 hs</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#127760;</div>
+            <div>
+              <h4>Idiomas</h4>
+              <p>Espanol &middot; Ingles &middot; Italiano</p>
+            </div>
+          </div>
+        </div>
+        <iframe
+          class="contact-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.5!2d-58.4561!3d-34.5585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb42e388b6fe1%3A0x6c97e277a4b3a747!2sCabildo%202230%2C%20C1428AAT%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1690000000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicacion del estudio juridico"
+        ></iframe>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Su nombre completo">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="su@email.com">
+          </div>
+          <div class="form-group">
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="11 XXXX-XXXX">
+          </div>
+          <div class="form-group">
+            <label for="area">Area de consulta</label>
+            <select id="area" name="area">
+              <option value="">Seleccione un area</option>
+              <option value="civil">Derecho Civil y Sucesiones</option>
+              <option value="penal">Derecho Penal</option>
+              <option value="familia">Derecho de Familia</option>
+              <option value="laboral">Derecho Laboral</option>
+              <option value="comercial">Derecho Comercial</option>
+              <option value="tributario">Derecho Tributario</option>
+              <option value="procesal">Derecho Procesal</option>
+              <option value="ambiental">Derecho Ambiental</option>
+              <option value="ddhh">Derechos Humanos</option>
+              <option value="consumidor">Defensa del Consumidor</option>
+              <option value="animal">Derecho Animal</option>
+              <option value="tecnologia">Nuevas Tecnologias</option>
+              <option value="genero">Violencia de Genero</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Describa brevemente su consulta..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">Enviar Consulta</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Dr. Vicente Del Federico & Asociados</div>
+        <p class="footer-desc">Estudio de abogados procesalistas y litigantes con mas de 25 anos de experiencia. Soluciones juridicas rapidas, efectivas y comprometidas con nuestros clientes.</p>
+        <p class="footer-desc" style="font-size:0.8rem;">Formas de pago: Efectivo &middot; Tarjetas de credito &middot; Mercado Pago &middot; Financiacion propia</p>
+      </div>
+      <div>
+        <h4>Areas Principales</h4>
+        <div class="footer-links">
+          <a href="#areas">Derecho Civil</a>
+          <a href="#areas">Derecho Penal</a>
+          <a href="#areas">Derecho de Familia</a>
+          <a href="#areas">Derecho Laboral</a>
+          <a href="#areas">Derecho Comercial</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <div class="footer-links">
+          <a href="tel:+5491127970029">11 2797-0029</a>
+          <a href="https://wa.me/5491154228070" target="_blank" rel="noopener">11 5422-8070 (WhatsApp)</a>
+          <a href="mailto:drdelfederico@gmail.com">drdelfederico@gmail.com</a>
+          <a href="#contacto">Cabildo 2230, Belgrano</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Estudio Juridico Dr. Vicente Del Federico & Asociados. Todos los derechos reservados.</p>
+      <p class="footer-matricula">CPACF &mdash; Tomo 75, Folio 88</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/5491154228070?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20juridica" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+(function() {
+  'use strict';
+
+  // ===== HEADER SCROLL =====
+  const header = document.getElementById('header');
+  let lastScroll = 0;
+
+  function onScroll() {
+    const y = window.scrollY;
+    if (y > 80) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    lastScroll = y;
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // ===== HAMBURGER =====
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  });
+
+  // Close mobile menu on link click
+  mobileMenu.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // ===== SCROLL REVEAL =====
+  var reveals = document.querySelectorAll('.reveal');
+
+  function checkReveal() {
+    var trigger = window.innerHeight * 0.88;
+    reveals.forEach(function(el) {
+      var top = el.getBoundingClientRect().top;
+      if (top < trigger) {
+        el.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkReveal, { passive: true });
+  window.addEventListener('load', checkReveal);
+
+  // ===== COUNTER ANIMATION =====
+  var counters = document.querySelectorAll('[data-count]');
+  var counterDone = new Set();
+
+  function animateCounter(el) {
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    var duration = 2000;
+    var start = 0;
+    var startTime = null;
+    var suffix = '+';
+
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      var progress = Math.min((timestamp - startTime) / duration, 1);
+      // Ease out cubic
+      var eased = 1 - Math.pow(1 - progress, 3);
+      var current = Math.floor(eased * target);
+      el.textContent = current + suffix;
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        el.textContent = target + suffix;
+      }
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  function checkCounters() {
+    counters.forEach(function(el) {
+      if (counterDone.has(el)) return;
+      var top = el.getBoundingClientRect().top;
+      if (top < window.innerHeight * 0.85) {
+        counterDone.add(el);
+        animateCounter(el);
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkCounters, { passive: true });
+  window.addEventListener('load', checkCounters);
+
+  // ===== FORM HANDLER =====
+  var form = document.getElementById('contactForm');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var nombre = document.getElementById('nombre').value;
+    var email = document.getElementById('email').value;
+    var telefono = document.getElementById('telefono').value;
+    var area = document.getElementById('area').value;
+    var mensaje = document.getElementById('mensaje').value;
+
+    // Build WhatsApp message
+    var text = 'Hola, mi nombre es ' + nombre + '.';
+    if (area) text += ' Consulta sobre: ' + area + '.';
+    text += ' ' + mensaje;
+    if (email) text += ' (Email: ' + email + ')';
+    if (telefono) text += ' (Tel: ' + telefono + ')';
+
+    var url = 'https://wa.me/5491154228070?text=' + encodeURIComponent(text);
+    window.open(url, '_blank');
+
+    // Visual feedback
+    var btn = form.querySelector('button[type="submit"]');
+    var orig = btn.textContent;
+    btn.textContent = 'Mensaje enviado a WhatsApp';
+    btn.style.background = '#25d366';
+    setTimeout(function() {
+      btn.textContent = orig;
+      btn.style.background = '';
+    }, 3000);
+  });
+
+  // ===== SMOOTH SCROLL FOR NAV =====
+  document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        var offset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 72;
+        var pos = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: pos, behavior: 'smooth' });
+      }
+    });
+  });
+
+})();
+</script>
+
+</body>
+</html>
